@@ -1,0 +1,106 @@
+/* 1. Main container */
+.adoption-form-container {
+  max-width: 1000px; /* 2. Max width */
+  margin: 30px auto; /* 3. Center + space top/bottom */
+  padding: 20px; /* 4. Padding */
+}
+
+/* 5. Page title */
+.form-title {
+  text-align: center; /* 6. Center */
+  margin-bottom: 30px; /* 7. Space below */
+  color: #333; /* 8. Dark grey */
+}
+
+/* 9. 2 column layout */
+.adoption-content {
+  display: grid; /* 10. Grid */
+  grid-template-columns: 1fr 1.5fr; /* 11. Left smaller, right bigger */
+  gap: 30px; /* 12. Space between columns */
+}
+
+/* 13. Dog info card on left */
+.dog-info-card {
+  border: 1px solid #ddd; /* 14. Border */
+  border-radius: 10px; /* 15. Rounded */
+  padding: 20px; /* 16. Padding */
+  background-color: #f9f9f9; /* 17. Light grey bg */
+  height: fit-content; /* 18. Only as tall as content */
+}
+
+/* 19. Dog image */
+.dog-info-image {
+  width: 100%; /* 20. Full width */
+  height: 250px; /* 21. Fixed height */
+  object-fit: cover; /* 22. Crop nicely */
+  border-radius: 8px; /* 23. Rounded */
+  margin-bottom: 15px; /* 24. Space below */
+}
+
+/* 25. Dog description */
+.dog-description {
+  margin-top: 10px; /* 26. Space above */
+  color: #555; /* 27. Grey text */
+}
+
+/* 28. The form on right */
+.adoption-form {
+  display: flex; /* 29. Stack inputs vertically */
+  flex-direction: column; /* 30. Column */
+  gap: 15px; /* 31. Space between fields */
+}
+
+/* 32. Labels */
+.adoption-form label {
+  font-weight: bold; /* 33. Bold */
+  color: #333; /* 34. Dark grey */
+  margin-bottom: -5px; /* 35. Pull closer to input */
+}
+
+/* 36. Inputs and textareas */
+.adoption-form input,
+.adoption-form textarea {
+  padding: 10px; /* 37. Padding */
+  border: 2px solid #ddd; /* 38. Border */
+  border-radius: 5px; /* 39. Rounded */
+  font-size: 15px; /* 40. Font size */
+  outline: none; /* 41. No blue outline */
+}
+
+/* 42. Focus effect */
+.adoption-form input:focus,
+.adoption-form textarea:focus {
+  border-color: #4CAF50; /* 43. Green on focus */
+}
+
+/* 44. Submit button */
+.submit-btn {
+  background-color: #4CAF50; /* 45. Green */
+  color: white; /* 46. White text */
+  padding: 14px; /* 47. Padding */
+  border: none; /* 48. No border */
+  border-radius: 5px; /* 49. Rounded */
+  font-size: 16px; /* 50. Bigger text */
+  font-weight: bold; /* 51. Bold */
+  cursor: pointer; /* 52. Hand cursor */
+  margin-top: 10px; /* 53. Space above */
+  transition: background-color 0.2s; /* 54. Smooth hover */
+}
+
+/* 55. Button hover */
+.submit-btn:hover {
+  background-color: #45a049; /* 56. Darker green */
+}
+
+/* 57. Not found message */
+.not-found {
+  text-align: center; /* 58. Center */
+  padding: 50px; /* 59. Big padding */
+}
+
+/* 60. Mobile: stack columns */
+@media (max-width: 768px) { /* 61. If screen small */
+  .adoption-content {
+    grid-template-columns: 1fr; /* 62. 1 column only */
+  }
+}

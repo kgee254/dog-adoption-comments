@@ -1,0 +1,15 @@
+/* 1. The grid container that holds all DogCards */
+.dog-list-grid {
+  display: grid; /* 2. Use CSS Grid */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* 3. Auto columns. Min 280px wide */
+  gap: 20px; /* 4. Space between cards */
+  padding: 20px; /* 5. Space around the whole grid */
+  justify-items: center; /* 6. Center cards in their grid cell */
+}
+
+/* 7. Message shown when search returns 0 dogs */
+.no-results {
+  text-align: center; /* 8. Center text */
+  padding: 50px 20px; /* 9. Big padding */
+  color: #777; /* 10. Grey text */
+} 

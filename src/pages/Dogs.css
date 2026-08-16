@@ -1,0 +1,22 @@
+/* 1. Main page container */
+.dogs-page {
+  max-width: 1200px; /* 2. Don't get too wide on big screens */
+  margin: 0 auto; /* 3. Center the page */
+  padding: 20px; /* 4. Space on sides */
+}
+
+/* 5. Main title */
+.dogs-page-title {
+  text-align: center; /* 6. Center text */
+  font-size: 2.5rem; /* 7. Big text */
+  color: #333; /* 8. Dark grey */
+  margin-bottom: 10px; /* 9. Space below */
+}
+
+/* 10. Subtitle */
+.dogs-page-subtitle {
+  text-align: center; /* 11. Center text */
+  font-size: 1.1rem; /* 12. Medium text */
+  color: #666; /* 13. Medium grey */
+  margin-bottom: 30px; /* 14. Space before searchbar */
+}

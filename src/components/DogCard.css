@@ -1,0 +1,65 @@
+/* 1. Main card container */
+.dog-card {
+  border: 1px solid #ddd; /* 2. Light grey border */
+  border-radius: 10px; /* 3. Rounded corners */
+  padding: 15px; /* 4. Space inside card */
+  margin: 10px; /* 5. Space between cards */
+  width: 280px; /* 6. Fixed width */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 7. Subtle shadow */
+  text-align: center; /* 8. Center all text */
+  background-color: white; /* 9. White background */
+  transition: transform 0.2s; /* 10. Smooth hover effect */
+}
+ 
+/* 11. Hover effect: card lifts up slightly */
+.dog-card:hover {
+  transform: translateY(-5px); /* 12. Move up 5px */
+}
+
+/* 13. Image inside card */
+.dog-card-image {
+  width: 100%; /* 14. Fill card width */
+  height: 200px; /* 15. Fixed height */
+  object-fit: cover; /* 16. Crop image nicely to fit */
+  border-radius: 8px; /* 17. Rounded image corners */
+  margin-bottom: 10px; /* 18. Space below image */
+}
+
+/* 19. Dog name */
+.dog-card-name {
+  margin: 10px 0; /* 20. Space above/below */
+  color: #333; /* 21. Dark grey text */
+}
+
+/* 22. Info lines: Breed, Age etc */
+.dog-card-info {
+  margin: 5px 0; /* 23. Small space between lines */
+  font-size: 14px; /* 24. Smaller text */
+  color: #555; /* 25. Medium grey */
+}
+
+/* 26. Description paragraph */
+.dog-card-description {
+  font-size: 13px; /* 27. Even smaller */
+  color: #777; /* 28. Light grey */
+  margin: 10px 0; /* 29. Space around */
+  min-height: 40px; /* 30. Keep all cards same height */
+}
+
+/* 31. Adopt button */
+.adopt-btn {
+  background-color: #4CAF50; /* 32. Green */
+  color: white; /* 33. White text */
+  padding: 10px 20px; /* 34. Padding inside button */
+  border: none; /* 35. No border */
+  border-radius: 5px; /* 36. Rounded button */
+  cursor: pointer; /* 37. Hand cursor on hover */
+  margin-top: 10px; /* 38. Space above button */
+  font-weight: bold; /* 39. Bold text */
+  transition: background-color 0.2s; /* 40. Smooth hover */
+}
+
+/* 41. Button hover effect */
+.adopt-btn:hover {
+  background-color: #45a049; /* 42. Darker green */
+}
