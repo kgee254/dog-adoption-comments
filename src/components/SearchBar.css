@@ -1,23 +1,30 @@
-/* 1. Centers the search bar */
-.searchbar-container {
-  display: flex; /* 2. Use flex to center */
-  justify-content: center; /* 3. Center horizontally */
-  padding: 20px; /* 4. Space around */
+/* SearchBar.css - Pawfect Match Theme */
+
+.searchbar-container { /* 1. Wrapper div */
+  max-width: 600px; /* 2. Don't let it get too wide */
+  margin: 0 auto 40px auto; /* 3. Center it + space below */
+  padding: 0 20px; /* 4. Padding on mobile */
 }
 
-/* 5. The input box itself */
-.searchbar-input {
-  width: 100%; /* 6. Full width of container */
-  max-width: 500px; /* 7. But don't get bigger than 500px */
-  padding: 12px 20px; /* 8. Padding inside */
-  font-size: 16px; /* 9. Readable text */
-  border: 2px solid #ddd; /* 10. Light grey border */
-  border-radius: 25px; /* 11. Pill shape */
-  outline: none; /* 12. Remove blue outline on focus */
-  transition: border-color 0.2s; /* 13. Smooth border change */
+.searchbar-input { /* 5. The actual input box */
+  width: 100%; /* 6. Fill container width */
+  padding: 14px 20px; /* 7. Tall padding like your screenshot buttons */
+  border-radius: 16px; /* 8. Soft rounded corners like cards */
+  border: 1px solid #E8E1D8; /* 9. Light beige border */
+  background-color: #FFFFFF; /* 10. White background */
+  font-family: 'Poppins', sans-serif; /* 11. Theme font */
+  font-size: 1rem; /* 12. Readable text size */
+  color: #3D3A36; /* 13. Dark brown text */
+  outline: none; /* 14. Remove ugly blue outline */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04); /* 15. Soft shadow */
+  transition: all 0.2s ease; /* 16. Smooth focus effect */
 }
 
-/* 14. When you click into the input */
-.searchbar-input:focus {
-  border-color: #4CAF50; /* 15. Green border on focus */
+.searchbar-input::placeholder { /* 17. Style placeholder text */
+  color: #8A847F; /* 18. Light gray placeholder */
+}
+
+.searchbar-input:focus { /* 19. When user clicks in the box */
+  border-color: #7A8450; /* 20. Sage green border on focus */
+  box-shadow: 0 0 0 3px rgba(122, 132, 80, 0.15); /* 21. Soft sage glow */
 }

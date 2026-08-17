@@ -1,22 +1,23 @@
-/* 1. Main page container */
-.dogs-page {
-  max-width: 1200px; /* 2. Don't get too wide on big screens */
-  margin: 0 auto; /* 3. Center the page */
-  padding: 20px; /* 4. Space on sides */
+/* Dogs.css - Styles for /dogs page */
+
+.dogs-page { /* 1. Main wrapper div */
+  background-color: #FDF8F3; /* 2. Beige background to remove white strips */
+  padding: 40px 20px; /* 3. Space on top/bottom and sides */
+  min-height: 100vh; /* 4. Make sure bg fills whole page height */
+  font-family: 'Poppins', sans-serif; /* 5. Use theme font */
 }
 
-/* 5. Main title */
-.dogs-page-title {
-  text-align: center; /* 6. Center text */
-  font-size: 2.5rem; /* 7. Big text */
-  color: #333; /* 8. Dark grey */
-  margin-bottom: 10px; /* 9. Space below */
+.dogs-page-title { /* 6. "Find Your New Best Friend" h1 */
+  text-align: center; /* 7. Center the text */
+  font-size: 2.5rem; /* 8. Big heading */
+  font-weight: 700; /* 9. Bold */
+  color: #3D3A36; /* 10. Dark brown text from theme */
+  margin: 0 0 12px 0; /* 11. Margin bottom only */
 }
 
-/* 10. Subtitle */
-.dogs-page-subtitle {
-  text-align: center; /* 11. Center text */
-  font-size: 1.1rem; /* 12. Medium text */
-  color: #666; /* 13. Medium grey */
-  margin-bottom: 30px; /* 14. Space before searchbar */
+.dogs-page-subtitle { /* 12. "Browse all dogs..." p */
+  text-align: center; /* 13. Center the text */
+  font-size: 1.1rem; /* 14. Medium text */
+  color: #8A847F; /* 15. Light gray text from theme */
+  margin: 0 0 32px 0; /* 16. Margin bottom for space before search */
 }

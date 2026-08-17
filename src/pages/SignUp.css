@@ -1,0 +1,94 @@
+/* SignUp.css - Centered form card */
+
+.form-page { /* 1. Full page wrapper */
+  background-color: #FDF8F3; /* 2. Beige background */
+  min-height: 80vh; /* 3. Take up most of screen height */
+  display: flex; /* 4. Use flex to center */
+  justify-content: center; /* 5. Center horizontally */
+  align-items: center; /* 6. Center vertically */
+  padding: 40px 20px; /* 7. Padding on mobile */
+  font-family: 'Poppins', sans-serif; /* 8. Theme font */
+}
+
+.form-card { /* 9. The white card */
+  background-color: #FFFFFF; /* 10. White card */
+  padding: 40px; /* 11. Space inside */
+  border-radius: 24px; /* 12. Super rounded like dog cards */
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06); /* 13. Soft shadow */
+  width: 100%; /* 14. Responsive */
+  max-width: 420px; /* 15. Don't get too wide */
+}
+
+.form-title { /* 16. "Sign Up" heading */
+  text-align: center; /* 17. Center text */
+  font-size: 2rem; /* 18. Big */
+  font-weight: 700; /* 19. Bold */
+  color: #3D3A36; /* 20. Dark brown */
+  margin: 0 0 24px 0; /* 21. Space below */
+}
+
+.form { /* 22. The form itself */
+  display: flex; /* 23. Stack inputs */
+  flex-direction: column; /* 24. Column */
+  gap: 16px; /* 25. Space between inputs - replaces <br/> */
+}
+
+.form-input { /* 26. All input fields */
+  width: 100%; /* 27. Full width */
+  padding: 14px 16px; /* 28. Padding inside */
+  border-radius: 12px; /* 29. Rounded */
+  border: 1px solid #E8E1D8; /* 30. Light beige border */
+  font-family: 'Poppins', sans-serif; /* 31. Theme font */
+  font-size: 1rem; /* 32. Text size */
+  outline: none; /* 33. No blue outline */
+  transition: border-color 0.2s ease; /* 34. Smooth focus */
+  box-sizing: border-box; /* 35. Include padding in width */
+}
+
+.form-input:focus { /* 36. When clicked */
+  border-color: #7A8450; /* 37. Sage border */
+}
+
+.form-btn { /* 38. Submit button */
+  background-color: #7A8450; /* 39. Sage green */
+  color: white; /* 40. White text */
+  border: none; /* 41. No border */
+  padding: 14px; /* 42. Tall button */
+  border-radius: 12px; /* 43. Rounded */
+  font-weight: 600; /* 44. Semi-bold */
+  font-size: 1rem; /* 45. Text size */
+  font-family: 'Poppins', sans-serif; /* 46. Theme font */
+  cursor: pointer; /* 47. Pointer */
+  transition: all 0.2s ease; /* 48. Smooth hover */
+  margin-top: 8px; /* 49. Space above */
+}
+
+.form-btn:hover { /* 50. Hover effect */
+  background-color: #6B7346; /* 51. Darker sage */
+  transform: translateY(-1px); /* 52. Lift effect */
+}
+
+.form-message { /* 53. Success/error message */
+  text-align: center; /* 54. Center */
+  margin-top: 16px; /* 55. Space above */
+  color: #7A8450; /* 56. Sage for success */
+  font-weight: 500; /* 57. Medium */
+}
+
+.form-link-text { /* 1. Wrapper for link under button */
+  text-align: center; /* 2. Center it */
+  margin-top: 16px; /* 3. Space above */
+  font-size: 0.9rem; /* 4. Smaller text */
+}
+
+.form-link { /* 5. The "Are you an administrator?" link */
+  color: #7A8450; /* 6. Sage green */
+  text-decoration: none; /* 7. No underline */
+  font-weight: 600; /* 8. Semi-bold */
+  transition: color 0.2s ease; /* 9. Smooth hover */
+}
+
+.form-link:hover { /* 10. Hover effect */
+  color: #6B7346; /* 11. Darker sage */
+  text-decoration: underline; /* 12. Underline on hover */
+}

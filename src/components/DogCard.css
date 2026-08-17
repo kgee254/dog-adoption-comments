@@ -1,65 +1,77 @@
-/* 1. Main card container */
-.dog-card {
-  border: 1px solid #ddd; /* 2. Light grey border */
-  border-radius: 10px; /* 3. Rounded corners */
-  padding: 15px; /* 4. Space inside card */
-  margin: 10px; /* 5. Space between cards */
-  width: 280px; /* 6. Fixed width */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 7. Subtle shadow */
-  text-align: center; /* 8. Center all text */
-  background-color: white; /* 9. White background */
-  transition: transform 0.2s; /* 10. Smooth hover effect */
-}
- 
-/* 11. Hover effect: card lifts up slightly */
-.dog-card:hover {
-  transform: translateY(-5px); /* 12. Move up 5px */
+/* DogCard.css - Pawfect Match Theme */
+
+.dog-card { /* 1. Main card container */
+  background-color: #FFFFFF; /* 2. White card on beige bg */
+  border-radius: 24px; /* 3. Extra rounded like the blobs in img 1 */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05); /* 4. Soft shadow */
+  overflow: hidden; /* 5. Make sure image corners are rounded too */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* 6. Smooth hover effect */
+  display: flex; /* 7. Stack image + content vertically */
+  flex-direction: column; /* 8. Stack down */
+  font-family: 'Poppins', sans-serif; /* 9. Same font as navbar */
 }
 
-/* 13. Image inside card */
-.dog-card-image {
+.dog-card:hover { /* 10. When you hover over card */
+  transform: translateY(-5px); /* 11. Lift card up slightly */
+  box-shadow: 0 8px 20px rgba(122, 132, 80, 0.15); /* 12. Bigger shadow with sage tint */
+}
+
+.dog-card-image { /* 13. The dog photo */
   width: 100%; /* 14. Fill card width */
-  height: 200px; /* 15. Fixed height */
-  object-fit: cover; /* 16. Crop image nicely to fit */
-  border-radius: 8px; /* 17. Rounded image corners */
-  margin-bottom: 10px; /* 18. Space below image */
+  height: 240px; /* 15. Fixed height for consistency */
+  object-fit: cover; /* 16. Crop image nicely instead of stretching */
+  background-color: #D4B483; /* 17. Tan background while image loads */
 }
 
-/* 19. Dog name */
-.dog-card-name {
-  margin: 10px 0; /* 20. Space above/below */
-  color: #333; /* 21. Dark grey text */
+.dog-card-content { /* 18. NEW: Wrapper for all text + button */
+  padding: 20px; /* 19. Space inside card */
+  display: flex; /* 20. Use flex */
+  flex-direction: column; /* 21. Stack down */
+  gap: 8px; /* 22. Space between elements */
+  flex-grow: 1; /* 23. Make content fill remaining space */
 }
 
-/* 22. Info lines: Breed, Age etc */
-.dog-card-info {
-  margin: 5px 0; /* 23. Small space between lines */
-  font-size: 14px; /* 24. Smaller text */
-  color: #555; /* 25. Medium grey */
+.dog-card-name { /* 24. Dog's name h3 */
+  font-size: 1.5rem; /* 25. Big name */
+  font-weight: 700; /* 26. Bold */
+  color: #3D3A36; /* 27. Dark brown */
+  margin: 0; /* 28. Remove default h3 margin */
 }
 
-/* 26. Description paragraph */
-.dog-card-description {
-  font-size: 13px; /* 27. Even smaller */
-  color: #777; /* 28. Light grey */
-  margin: 10px 0; /* 29. Space around */
-  min-height: 40px; /* 30. Keep all cards same height */
+.dog-card-info { /* 29. Breed, Age, Size, Gender lines */
+  font-size: 0.9rem; /* 30. Smaller text */
+  color: #8A847F; /* 31. Light gray */
+  margin: 0; /* 32. Remove default p margin */
 }
 
-/* 31. Adopt button */
-.adopt-btn {
-  background-color: #4CAF50; /* 32. Green */
-  color: white; /* 33. White text */
-  padding: 10px 20px; /* 34. Padding inside button */
-  border: none; /* 35. No border */
-  border-radius: 5px; /* 36. Rounded button */
-  cursor: pointer; /* 37. Hand cursor on hover */
-  margin-top: 10px; /* 38. Space above button */
-  font-weight: bold; /* 39. Bold text */
-  transition: background-color 0.2s; /* 40. Smooth hover */
+.dog-card-info strong { /* 33. The "Breed:" "Age:" labels */
+  color: #3D3A36; /* 34. Make labels dark brown */
+  font-weight: 600; /* 35. Semi-bold */
 }
 
-/* 41. Button hover effect */
-.adopt-btn:hover {
-  background-color: #45a049; /* 42. Darker green */
+.dog-card-description { /* 36. Description paragraph */
+  font-size: 0.9rem; /* 37. Small text */
+  color: #8A847F; /* 38. Light gray */
+  line-height: 1.5; /* 39. More readable line spacing */
+  margin: 8px 0 12px 0; /* 40. Top/bottom margin */
+  flex-grow: 1; /* 41. Push button to bottom */
+}
+
+.adopt-btn { /* 42. Adopt button */
+  background-color: #7A8450; /* 43. Sage green primary */
+  color: white; /* 44. White text */
+  border: none; /* 45. No border */
+  padding: 12px 20px; /* 46. Button padding */
+  border-radius: 12px; /* 47. Rounded button */
+  font-weight: 600; /* 48. Semi-bold */
+  font-size: 1rem; /* 49. Button text size */
+  font-family: 'Poppins', sans-serif; /* 50. Same font */
+  cursor: pointer; /* 51. Pointer on hover */
+  transition: all 0.2s ease; /* 52. Smooth hover */
+  margin-top: auto; /* 53. Push to bottom of card */
+}
+
+.adopt-btn:hover { /* 54. Hover effect */
+  background-color: #6B7346; /* 55. Darker sage */
+  transform: scale(1.02); /* 56. Slight grow effect */
 }

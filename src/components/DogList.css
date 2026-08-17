@@ -1,15 +1,24 @@
-/* 1. The grid container that holds all DogCards */
-.dog-list-grid {
-  display: grid; /* 2. Use CSS Grid */
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* 3. Auto columns. Min 280px wide */
-  gap: 20px; /* 4. Space between cards */
-  padding: 20px; /* 5. Space around the whole grid */
-  justify-items: center; /* 6. Center cards in their grid cell */
+/* DogList.css - 1 card per row layout */
+
+.dog-list-grid { /* 1. Container for all dog cards */
+  display: flex; /* 2. Stack cards vertically */
+  flex-direction: column; /* 3. 1 per row */
+  gap: 32px; /* 4. Space between each card */
+  padding: 40px 60px; /* 5. Padding around the whole list */
+  background-color: #FDF8F3; /* 6. Beige background to match theme */
+  max-width: 900px; /* 7. Limit width so cards don't get too wide */
+  margin: 0 auto; /* 8. Center the whole list on page */
 }
 
-/* 7. Message shown when search returns 0 dogs */
-.no-results {
-  text-align: center; /* 8. Center text */
-  padding: 50px 20px; /* 9. Big padding */
-  color: #777; /* 10. Grey text */
-} 
+.no-results { /* 9. Message when search finds nothing */
+  text-align: center; /* 10. Center text */
+  padding: 60px 20px; /* 11. Big padding */
+  color: #8A847F; /* 12. Light gray text */
+  font-family: 'Poppins', sans-serif; /* 13. Same font */
+}
+
+.no-results h3 { /* 14. "No dogs found" heading */
+  font-size: 1.5rem; /* 15. Bigger */
+  color: #3D3A36; /* 16. Dark brown */
+  margin-bottom: 8px; /* 17. Space below */
+}

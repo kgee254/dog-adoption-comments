@@ -1,0 +1,82 @@
+/* Navbar.css - Pawfect Match Theme */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap'); /* 1. Import font */
+
+.navbar { /* 2. Main navbar container */
+  display: flex; /* 3. Use flexbox to space logo, links, and button */
+  justify-content: space-between; /* 4. Space out items */
+  align-items: center; /* 5. Vertically center everything */
+  padding: 20px 60px; /* 6. Top/bottom and left/right padding */
+  background-color: #FDF8F3; /* 7. Beige background from your theme */
+  border-bottom: 1px solid #E8E1D8; /* 8. Subtle beige border */
+  font-family: 'Poppins', sans-serif; /* 9. Set font for whole navbar */
+  position: sticky; /* 10. Navbar stays at top when scrolling */
+  top: 0; /* 11. Stick to top */
+  z-index: 1000; /* 12. Stay above other content */
+}
+
+.navbar-logo { /* 13. Style for "Pawfect Match" logo */
+  font-size: 1.5rem; /* 14. Bigger logo text */
+  font-weight: 700; /* 15. Bold */
+  color: #3D3A36; /* 16. Dark brown text */
+  text-decoration: none; /* 17. Remove underline from Link */
+}
+
+.navbar-links { /* 18. Container for middle links */
+  display: flex; /* 19. Put links in a row */
+  gap: 32px; /* 20. Space between links */
+}
+
+.navbar-links a { /* 21. Style all links inside navbar-links */
+  color: #3D3A36; /* 22. Dark brown text */
+  text-decoration: none; /* 23. Remove underline */
+  font-weight: 500; /* 24. Medium weight */
+  transition: color 0.2s ease; /* 25. Smooth color change on hover */
+}
+
+.navbar-links a:hover { /* 26. When you hover over a link */
+  color: #7A8450; /* 27. Change to sage green */
+}
+
+.navbar-auth { /* 28. Container for right side: Welcome + buttons */
+  display: flex; /* 29. Put items in a row */
+  align-items: center; /* 30. Vertically center */
+  gap: 16px; /* 31. Space between items */
+}
+
+.navbar-welcome { /* 32. "Welcome John" text */
+  color: #8A847F; /* 33. Light gray text */
+  font-size: 0.9rem; /* 34. Slightly smaller */
+}
+
+.navbar-btn { /* 35. Base style for all buttons */
+  padding: 10px 20px; /* 36. Button padding */
+  border-radius: 12px; /* 37. Rounded corners like your theme */
+  font-weight: 600; /* 38. Semi-bold */
+  font-family: 'Poppins', sans-serif; /* 39. Same font */
+  cursor: pointer; /* 40. Show pointer on hover */
+  transition: all 0.2s ease; /* 41. Smooth hover effect */
+  border: none; /* 42. Remove default border */
+  font-size: 0.9rem; /* 43. Button text size */
+}
+
+.navbar-btn-primary { /* 44. Sage green button: Sign In, Add Dog, Logout */
+  background-color: #7A8450; /* 45. Sage green */
+  color: white; /* 46. White text */
+}
+
+.navbar-btn-primary:hover { /* 47. Hover effect */
+  background-color: #6B7346; /* 48. Darker sage */
+  transform: translateY(-1px); /* 49. Lift effect */
+}
+
+.navbar-btn-secondary { /* 50. Outline button: Sign Up */
+  background-color: transparent; /* 51. Transparent */
+  color: #7A8450; /* 52. Sage text */
+  border: 1px solid #7A8450; /* 53. Sage border */
+}
+
+.navbar-btn-secondary:hover { /* 54. Hover effect */
+  background-color: #7A8450; /* 55. Fill with sage */
+  color: white; /* 56. White text */
+}

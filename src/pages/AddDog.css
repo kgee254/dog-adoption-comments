@@ -1,68 +1,39 @@
-/* 1. Main page container */
-.adddog-container {
-  max-width: 600px; /* 2. Don't get too wide */
-  margin: 40px auto; /* 3. Center page + space top/bottom */
-  padding: 30px; /* 4. Padding inside */
-  background-color: white; /* 5. White background */
-  border-radius: 10px; /* 6. Rounded corners */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* 7. Soft shadow */
+/* AddDog.css - Admin add dog form */
+
+.adddog-card { /* 1. Make card wider than login forms */
+  max-width: 600px; /* 2. Wider for more fields */
 }
 
-/* 8. Page title */
-.adddog-title {
-  text-align: center; /* 9. Center text */
-  margin-bottom: 30px; /* 10. Space below */
-  color: #333; /* 11. Dark grey */
+.form-file { /* 3. Style file input */
+  width: 100%; /* 4. Full width */
+  padding: 10px; /* 5. Padding */
+  border-radius: 12px; /* 6. Rounded */
+  border: 1px solid #E8E1D8; /* 7. Beige border */
+  font-family: 'Poppins', sans-serif; /* 8. Font */
+  background-color: #FDF8F3; /* 9. Light beige bg */
+  cursor: pointer; /* 10. Pointer */
 }
 
-/* 12. The form layout */
-.adddog-form {
-  display: flex; /* 13. Stack items vertically */
-  flex-direction: column; /* 14. Column direction */
-  gap: 15px; /* 15. Space between each field */
+.form-file::file-selector-button { /* 11. Style the "Choose File" button */
+  background-color: #7A8450; /* 12. Sage */
+  color: white; /* 13. White text */
+  border: none; /* 14. No border */
+  padding: 8px 16px; /* 15. Padding */
+  border-radius: 8px; /* 16. Rounded */
+  margin-right: 12px; /* 17. Space */
+  cursor: pointer; /* 18. Pointer */
+  font-weight: 600; /* 19. Semi-bold */
 }
 
-/* 16. All labels */
-.adddog-form label {
-  font-weight: bold; /* 17. Bold text */
-  color: #333; /* 18. Dark grey */
-  margin-bottom: -5px; /* 19. Pull closer to input */
+.form-file::file-selector-button:hover { /* 20. Hover */
+  background-color: #6B7346; /* 21. Darker sage */
 }
 
-/* 20. All inputs, selects, textareas */
-.adddog-form input,
-.adddog-form select,
-.adddog-form textarea {
-  padding: 10px; /* 21. Space inside */
-  border: 2px solid #ddd; /* 22. Light grey border */
-  border-radius: 5px; /* 23. Rounded */
-  font-size: 15px; /* 24. Font size */
-  outline: none; /* 25. Remove default blue outline */
-  transition: border-color 0.2s; /* 26. Smooth focus effect */
-}
-
-/* 27. When user clicks into a field */
-.adddog-form input:focus,
-.adddog-form select:focus,
-.adddog-form textarea:focus {
-  border-color: #4CAF50; /* 28. Green border on focus */
-}
-
-/* 29. Submit button */
-.adddog-btn {
-  background-color: #4CAF50; /* 30. Green */
-  color: white; /* 31. White text */
-  padding: 14px; /* 32. Padding */
-  border: none; /* 33. No border */
-  border-radius: 5px; /* 34. Rounded */
-  font-size: 16px; /* 35. Bigger font */
-  font-weight: bold; /* 36. Bold */
-  cursor: pointer; /* 37. Hand cursor */
-  margin-top: 10px; /* 38. Space above */
-  transition: background-color 0.2s; /* 39. Smooth hover */
-}
-
-/* 40. Button hover */
-.adddog-btn:hover {
-  background-color: #45a049; /* 41. Darker green */
+.image-preview { /* 22. Image preview */
+  width: 200px; /* 23. Fixed width */
+  height: 200px; /* 24. Fixed height */
+  object-fit: cover; /* 25. Cover */
+  border-radius: 16px; /* 26. Rounded */
+  margin: 10px 0; /* 27. Margin */
+  border: 2px solid #E8E1D8; /* 28. Border */
 }

@@ -1,106 +1,115 @@
-/* 1. Main container */
-.adoption-form-container {
-  max-width: 1000px; /* 2. Max width */
-  margin: 30px auto; /* 3. Center + space top/bottom */
-  padding: 20px; /* 4. Padding */
+/* AdoptionForm.css - 2 column layout */
+
+.adoption-form-container { /* 1. Page wrapper */
+  background-color: #FDF8F3; /* 2. Beige bg */
+  padding: 40px 20px; /* 3. Padding */
+  min-height: 80vh; /* 4. Fill height */
+  font-family: 'Poppins', sans-serif; /* 5. Theme font */
 }
 
-/* 5. Page title */
-.form-title {
-  text-align: center; /* 6. Center */
-  margin-bottom: 30px; /* 7. Space below */
-  color: #333; /* 8. Dark grey */
+.form-title { /* 6. "Adopt Buddy" */
+  text-align: center; /* 7. Center */
+  font-size: 2.2rem; /* 8. Big */
+  font-weight: 700; /* 9. Bold */
+  color: #3D3A36; /* 10. Dark brown */
+  margin-bottom: 32px; /* 11. Space below */
 }
 
-/* 9. 2 column layout */
-.adoption-content {
-  display: grid; /* 10. Grid */
-  grid-template-columns: 1fr 1.5fr; /* 11. Left smaller, right bigger */
-  gap: 30px; /* 12. Space between columns */
+.adoption-content { /* 12. 2 column grid */
+  display: grid; /* 13. Use grid */
+  grid-template-columns: 1fr 1fr; /* 14. 2 equal columns */
+  gap: 32px; /* 15. Space between */
+  max-width: 1100px; /* 16. Limit width */
+  margin: 0 auto; /* 17. Center */
 }
 
-/* 13. Dog info card on left */
-.dog-info-card {
-  border: 1px solid #ddd; /* 14. Border */
-  border-radius: 10px; /* 15. Rounded */
-  padding: 20px; /* 16. Padding */
-  background-color: #f9f9f9; /* 17. Light grey bg */
-  height: fit-content; /* 18. Only as tall as content */
+.dog-info-card, .adoption-form { /* 18. Both cards */
+  background-color: #FFFFFF; /* 19. White card */
+  padding: 32px; /* 20. Padding inside */
+  border-radius: 24px; /* 21. Rounded like dog cards */
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06); /* 22. Soft shadow */
 }
 
-/* 19. Dog image */
-.dog-info-image {
-  width: 100%; /* 20. Full width */
-  height: 250px; /* 21. Fixed height */
-  object-fit: cover; /* 22. Crop nicely */
-  border-radius: 8px; /* 23. Rounded */
-  margin-bottom: 15px; /* 24. Space below */
+.dog-info-image { /* 23. Dog photo */
+  width: 100%; /* 24. Full width */
+  height: 300px; /* 25. Fixed height */
+  object-fit: cover; /* 26. Cover and crop */
+  border-radius: 16px; /* 27. Rounded */
+  margin-bottom: 16px; /* 28. Space below */
 }
 
-/* 25. Dog description */
-.dog-description {
-  margin-top: 10px; /* 26. Space above */
-  color: #555; /* 27. Grey text */
+.dog-info-card h2 { /* 29. Dog name in card */
+  font-size: 1.8rem; /* 30. Big */
+  color: #3D3A36; /* 31. Dark brown */
+  margin: 0 0 12px 0; /* 32. Margin */
 }
 
-/* 28. The form on right */
-.adoption-form {
-  display: flex; /* 29. Stack inputs vertically */
-  flex-direction: column; /* 30. Column */
-  gap: 15px; /* 31. Space between fields */
+.dog-info-card p { /* 33. Details text */
+  margin: 8px 0; /* 34. Spacing */
+  color: #555; /* 35. Gray text */
 }
 
-/* 32. Labels */
-.adoption-form label {
-  font-weight: bold; /* 33. Bold */
-  color: #333; /* 34. Dark grey */
-  margin-bottom: -5px; /* 35. Pull closer to input */
+.dog-description { /* 36. Description */
+  margin-top: 16px; /* 37. Space above */
+  line-height: 1.6; /* 38. Readable */
 }
 
-/* 36. Inputs and textareas */
-.adoption-form input,
-.adoption-form textarea {
-  padding: 10px; /* 37. Padding */
-  border: 2px solid #ddd; /* 38. Border */
-  border-radius: 5px; /* 39. Rounded */
-  font-size: 15px; /* 40. Font size */
-  outline: none; /* 41. No blue outline */
+.adoption-form h2 { /* 39. "Adoption Application" */
+  font-size: 1.5rem; /* 40. Medium */
+  color: #3D3A36; /* 41. Dark brown */
+  margin: 0 0 20px 0; /* 42. Margin */
 }
 
-/* 42. Focus effect */
-.adoption-form input:focus,
-.adoption-form textarea:focus {
-  border-color: #4CAF50; /* 43. Green on focus */
+.adoption-form label { /* 43. Form labels */
+  display: block; /* 44. On own line */
+  font-weight: 600; /* 45. Semi-bold */
+  color: #3D3A36; /* 46. Dark brown */
+  margin-bottom: 6px; /* 47. Space below */
+  margin-top: 12px; /* 48. Space above */
 }
 
-/* 44. Submit button */
-.submit-btn {
-  background-color: #4CAF50; /* 45. Green */
-  color: white; /* 46. White text */
-  padding: 14px; /* 47. Padding */
-  border: none; /* 48. No border */
-  border-radius: 5px; /* 49. Rounded */
-  font-size: 16px; /* 50. Bigger text */
-  font-weight: bold; /* 51. Bold */
-  cursor: pointer; /* 52. Hand cursor */
-  margin-top: 10px; /* 53. Space above */
-  transition: background-color 0.2s; /* 54. Smooth hover */
+.form-input, .form-textarea { /* 49. Inputs + textarea */
+  width: 100%; /* 50. Full width */
+  padding: 12px 16px; /* 51. Padding */
+  border-radius: 12px; /* 52. Rounded */
+  border: 1px solid #E8E1D8; /* 53. Beige border */
+  font-family: 'Poppins', sans-serif; /* 54. Font */
+  font-size: 1rem; /* 55. Size */
+  box-sizing: border-box; /* 56. Include padding */
+  outline: none; /* 57. No outline */
 }
 
-/* 55. Button hover */
-.submit-btn:hover {
-  background-color: #45a049; /* 56. Darker green */
+.form-input:focus, .form-textarea:focus { /* 58. Focus state */
+  border-color: #7A8450; /* 59. Sage border */
 }
 
-/* 57. Not found message */
-.not-found {
-  text-align: center; /* 58. Center */
-  padding: 50px; /* 59. Big padding */
+.submit-btn { /* 60. Submit button */
+  width: 100%; /* 61. Full width */
+  background-color: #7A8450; /* 62. Sage */
+  color: white; /* 63. White text */
+  border: none; /* 64. No border */
+  padding: 14px; /* 65. Padding */
+  border-radius: 12px; /* 66. Rounded */
+  font-weight: 600; /* 67. Semi-bold */
+  font-size: 1rem; /* 68. Size */
+  margin-top: 20px; /* 69. Space above */
+  cursor: pointer; /* 70. Pointer */
+  transition: background-color 0.2s ease; /* 71. Smooth */
 }
 
-/* 60. Mobile: stack columns */
-@media (max-width: 768px) { /* 61. If screen small */
-  .adoption-content {
-    grid-template-columns: 1fr; /* 62. 1 column only */
+.submit-btn:hover { /* 72. Hover */
+  background-color: #6B7346; /* 73. Darker sage */
+}
+
+.not-found { /* 74. Error message */
+  text-align: center; /* 75. Center */
+  padding: 60px; /* 76. Padding */
+  color: #8A847F; /* 77. Gray */
+}
+
+/* Mobile responsive */
+@media (max-width: 900px) { /* 78. On tablets/phones */
+  .adoption-content { /* 79. Stack columns */
+    grid-template-columns: 1fr; /* 80. 1 column */
   }
 }
